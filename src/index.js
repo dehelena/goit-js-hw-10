@@ -63,7 +63,7 @@ function renderCountryInfo([{ name, capital, flags, population, languages }]) {
   const lang = Object.values(languages).join(', ');
 
   const markup = `<h2 class="country-info-title">
-  <img class="country-flag-svg" src=${flags.svg} width="50">
+  <img class="country-flag-svg" src=${flags.svg} width="50px">
   ${name.official}</h2>
   <ul class="country-info">
 <li class="country-info-item">
