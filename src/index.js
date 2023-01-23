@@ -42,6 +42,8 @@ function onSearch(e) {
     .catch(err => {
       if (err.message === '404') {
         Notify.failure('Oops, there is no country with that name');
+        countryList.innerHTML = '';
+        countryInfo.innerHTML = '';
       }
     });
 }
